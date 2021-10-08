@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/et_web"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="76dp"
+        android:width="300dp"
+        android:ems="10"
+        android:hint="Enter Web URL"
+        android:inputType="textPersonName"
+        android:text="developer.android.com"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/webBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:onClick="webURL"
+        android:text="Open website"
+        app:backgroundTint="#398DB5"
+        app:layout_constraintEnd_toEndOf="@+id/et_web"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/et_web"
+        app:layout_constraintTop_toBottomOf="@+id/et_web" />
+
+    <EditText
+        android:id="@+id/et_map"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="256dp"
+        android:width="300dp"
+        android:ems="10"
+        android:hint="Enter Place Name"
+        android:inputType="textPersonName"
+        android:text="Golden Gate Bridge"
+        app:layout_constraintEnd_toEndOf="@+id/et_web"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/et_web"
+        app:layout_constraintTop_toBottomOf="@+id/et_web" />
+
+    <Button
+        android:id="@+id/locationBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:onClick="locationName"
+        android:text="Open Location"
+        app:backgroundTint="#398DB5"
+        app:layout_constraintEnd_toEndOf="@+id/et_map"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/et_map"
+        app:layout_constraintTop_toBottomOf="@+id/et_map" />
+</androidx.constraintlayout.widget.ConstraintLayout>
