@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    xmlns:app="http://schemas.android.com/apk/res-auto"-->
+<!--    xmlns:tools="http://schemas.android.com/tools"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="match_parent"-->
+<!--    tools:context=".MainActivity">-->
+
+<!--&lt;!&ndash;    <com.google.android.material.appbar.AppBarLayout&ndash;&gt;-->
+<!--&lt;!&ndash;        android:layout_width="match_parent"&ndash;&gt;-->
+<!--&lt;!&ndash;        android:layout_height="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;        android:theme="@style/Theme.Cr7.AppBarOverlay">&ndash;&gt;-->
+
+<!--&lt;!&ndash;    </com.google.android.material.appbar.AppBarLayout>&ndash;&gt;-->
+
+<!--    <Button-->
+<!--        android:id="@+id/btn_button1"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="@string/button1" />-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/tv_textview1"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="@string/textview1" />-->
+
+<!--</androidx.coordinatorlayout.widget.CoordinatorLayout>-->
+
+
+<TableLayout
+    xmlns:android = "http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TableRow>
+        <TextView
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:text="@string/name">
+
+        </TextView>
+        <EditText
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:layout_weight="3">
+
+        </EditText>
+
+    </TableRow>
+
+    <TableRow>
+
+        <TextView
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:text="@string/age">
+
+        </TextView>
+        <EditText
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:layout_weight="3">
+
+        </EditText>
+
+    </TableRow>
+
+    <TableRow>
+
+        <Button
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:text="OK">
+
+
+        </Button>
+
+    </TableRow>
+
+
+</TableLayout>

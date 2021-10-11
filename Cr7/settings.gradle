@@ -1,0 +1,3 @@
+include ':Juventus'
+include ':app'
+rootProject.name = "Cr7"
